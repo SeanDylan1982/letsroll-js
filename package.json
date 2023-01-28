@@ -1,0 +1,25 @@
+{
+  "name": "ishop",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Sean Patterson",
+  "license": "ISC",
+  "bin": {
+    "ishop": "index.js"
+  },
+  "dependencies": {
+    "cookie-session": "^2.0.0",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "@types/cookie-session": "^2.0.44"
+  }
+}
