@@ -4,6 +4,8 @@ const cookieSession = require('cookie-session');
 const authRouter = require('./routes/admin/auth');
 const adminProductsRouter = require('./routes/admin/products');
 const productsRouter = require('./routes/products');
+const adminPostsRouter = require('./routes/admin/posts');
+const postsRouter = require('./routes/posts');
 const cartsRouter = require('./routes/carts');
 
 const app = express();
@@ -16,10 +18,8 @@ app.use(
   })
 );
 app.use(authRouter);
-app.use(productsRouter);
-app.use(adminProductsRouter);
-app.use(cartsRouter);
-
+app.use(postsRouter);
+app.use(adminPostsRouter);
 app.listen(3000, () => {
-  console.log('Listening');
+  console.log('Listening on port 3000');
 });
