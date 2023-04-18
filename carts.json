@@ -1,9 +1,5 @@
 [
   {
-    "items": [],
-    "id": "cafda8fb"
-  },
-  {
     "items": [
       {
         "id": "62b582ba",
@@ -15,31 +11,5 @@
       }
     ],
     "id": "fb1e6e85"
-  },
-  {
-    "items": [
-      {
-        "id": "e7fccbd5",
-        "quantity": 1
-      },
-      {
-        "id": "ed1a0390",
-        "quantity": 1
-      },
-      {
-        "id": "a8f3ec8c",
-        "quantity": 1
-      }
-    ],
-    "id": "d9f4e41c"
-  },
-  {
-    "items": [
-      {
-        "id": "62b582ba",
-        "quantity": 1
-      }
-    ],
-    "id": "bf6e9dc4"
   }
 ]

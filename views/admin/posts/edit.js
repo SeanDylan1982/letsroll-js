@@ -18,11 +18,11 @@ module.exports = ({ post, errors }) => {
             </div>
             
             <div class="field">
-              <label class="label">Price</label>
+              <label class="label">Body</label>
               <input value="${
-                post.price
-              }" class="input" placeholder="Price" name="price">
-              <p class="help is-danger">${getError(errors, 'price')}</p>
+                post.body
+              }" class="input" placeholder="Body" name="body">
+              <p class="help is-danger">${getError(errors, 'body')}</p>
             </div>
             
             <div class="field">
