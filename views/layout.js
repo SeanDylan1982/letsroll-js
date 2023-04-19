@@ -35,7 +35,7 @@ module.exports = ({ content }) => {
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link" href="/"> <i class="fa fa-home"></i>
-                  <span> Home <span class="sr-only">(current)</span></a></span>
+                  <span> Home </a></span>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href=""> <i class="fa fa-newspaper"></i>
@@ -43,23 +43,23 @@ module.exports = ({ content }) => {
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href=""> <i class="fa fa-clipboard"></i>
-                  <span> Cardings</a></span>
+                  <span> Cardings </a></span>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href=""> <i class="fa fa-image"></i>
-                  <span> Gallery</a></span>
+                  <span> Gallery </a></span>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href=""> <i class="fa fa-file"></i>
-                <span> Constitution</span></a>
+                <span> Constitution </span></a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href=""> <i class="fa fa-location-arrow"></i> 
-                <span> Directions</span></a>
+                <span> Directions </span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href=""> <i class="fa fa-phone"></i>
-                  <span> Contact Us</a></span>
+                  <span> Contact Us </a></span>
                 </li>
               </ul>
             </div>
@@ -67,7 +67,6 @@ module.exports = ({ content }) => {
         </header>
         ${content}
       </body>
-      <script src="../app.js"></script>
     </html>
   `;
 };

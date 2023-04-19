@@ -6,6 +6,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
   const posts = await postsRepo.getAll();
+  posts.reverse();
   res.send(postsIndexTemplate({ posts }));
 });
 
