@@ -52,7 +52,7 @@ router.post(
 
     req.session.userId = user.id;
 
-    res.redirect('/admin/products');
+    res.redirect('/');
   }
 );
 

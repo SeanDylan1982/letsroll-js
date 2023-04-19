@@ -6,11 +6,10 @@ module.exports = {
     .trim()
     .isLength({ min: 5, max: 40 })
     .withMessage('Must be between 5 and 40 characters'),
-  requirePrice: check('price')
+  requireBody: check('body')
     .trim()
-    .toFloat()
-    .isFloat({ min: 1 })
-    .withMessage('Must be a number greater than 1'),
+    .isLength({ min: 5, max: 500 })
+    .withMessage('Must be between 5 and 500 characters'),
   requireEmail: check('email')
     .trim()
     .normalizeEmail()

@@ -6,7 +6,7 @@ module.exports = ({ posts }) => {
       return `
       <tr>
         <td>${post.title}</td>
-        <td>${post.price}</td>
+        <td>${post.body}</td>
         <td>
           <a href="/admin/posts/${post.id}/edit">
             <button class="button is-link">

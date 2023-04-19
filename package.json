@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "build": "webpack"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "Sean Patterson",

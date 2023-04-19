@@ -4,7 +4,7 @@ module.exports = ({ posts }) => {
   const renderedPosts = posts
     .map(post => {
       return `
-        <div class="column is-three-quarter">
+        <div class="column is-three-quarter post">
           <div class="card post-card" style="position: relative; display: flex; flex-direction: row; align-items: left; justify-content: left; width: 100%; height: 300px; margin-top: 100px; border: 1px solid #1a1a1a55;">
             <figure style="float: left; align-items: left; text-align: left; justify-content: left; border: 1px solid #1a1a1a55;">
               <img src="data:image/png;base64, ${post.image}" style="width: 250px; height: 250px; margin: 10px;"/>

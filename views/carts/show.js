@@ -3,7 +3,7 @@ const layout = require('../layout');
 module.exports = ({ items }) => {
   let totalPrice = 0;
   for (let item of items) {
-    totalPrice += item.quantity * item.product.price;
+    totalPrice += item.quantity * item.product.body;
   }
 
   const renderedItems = items
@@ -13,10 +13,10 @@ module.exports = ({ items }) => {
           <h3 class="subtitle">${item.product.title} (x${item.quantity})</h3>
           <div class="cart-right">
             <div>
-              @ $${item.product.price}
+              @ $${item.product.body}
             </div>
             <div class="price is-size-4">
-              $${item.product.price * item.quantity}
+              $${item.product.body * item.quantity}
             </div>
             <div class="remove">
               <form method="post" action="/cart/products/delete">

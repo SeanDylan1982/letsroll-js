@@ -6,7 +6,7 @@ const postsRepo = require('../../repositories/posts');
 const postsNewTemplate = require('../../views/admin/posts/new');
 const postsIndexTemplate = require('../../views/admin/posts/index');
 const postsEditTemplate = require('../../views/admin/posts/edit');
-const { requireTitle, requirePrice } = require('./validators');
+const { requireTitle, requireBody } = require('./validators');
 
 const router = express.Router();
 const upload = multer({ storage: multer.memoryStorage() });
@@ -24,12 +24,12 @@ router.post(
   '/admin/posts/new',
   requireAuth,
   upload.single('image'),
-  [requireTitle, requirePrice],
+  [requireTitle, requireBody],
   handleErrors(postsNewTemplate),
   async (req, res) => {
     const image = req.file.buffer.toString('base64');
-    const { title, price } = req.body;
-    await postsRepo.create({ title, price, image });
+    const { title, body } = req.body;
+    await postsRepo.create({ title, body, image });
 
     res.redirect('/admin/posts');
   }
@@ -49,7 +49,7 @@ router.post(
   '/admin/posts/:id/edit',
   requireAuth,
   upload.single('image'),
-  [requireTitle, requirePrice],
+  [requireTitle, requireBody],
   handleErrors(postsEditTemplate, async req => {
     const post = await postsRepo.getOne(req.params.id);
     return { post };
