@@ -2,6 +2,7 @@ const layout = require('../layout');
 const { getError } = require('../../helpers');
 
 module.exports = ({ errors }) => {
+  console.log(errors);
   return layout({
     content: `
       <div class="container">

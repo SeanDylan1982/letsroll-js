@@ -28,18 +28,42 @@ router.post(
 
     req.session.userId = user.id;
 
-    res.redirect('/admin/products');
+    res.redirect('/signin');
   }
 );
 
 router.get('/signout', (req, res) => {
   req.session = null;
-  res.send('You are logged out');
+  res.send('You are logged out').redirect('/');
 });
 
-router.get('/signin', (req, res) => {
-  res.send(signinTemplate({}));
-});
+// router.get('/news', (req, res) => {
+//   res.redirect('/news');
+// });
+
+// router.get('/carding', (req, res) => {
+//   res.redirect('/carding');
+// });
+
+// router.get('/gallery', (req, res) => {
+//   res.redirect('/gallery');
+// });
+
+// router.get('/constitution', (req, res) => {
+//   res.redirect('/constitution');
+// });
+
+// router.get('/directions', (req, res) => {
+//   res.redirect('/directions');
+// });
+
+// router.get('/contact', (req, res) => {
+//   res.redirect('/contact');
+// });
+
+// router.get('/popia', (req, res) => {
+//   res.redirect('/popia');
+// });
 
 router.post(
   '/signin',

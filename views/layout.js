@@ -1,5 +1,3 @@
-
-
 module.exports = ({ content }) => {
     return `
     <!DOCTYPE html>
@@ -38,27 +36,27 @@ module.exports = ({ content }) => {
                   <span> Home </a></span>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href=""> <i class="fa fa-newspaper"></i>
+                  <a class="nav-link" href="./news.js"> <i class="fa fa-newspaper"></i>
                   <span> News </a></span>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href=""> <i class="fa fa-clipboard"></i>
+                  <a class="nav-link" href="./carding.js"> <i class="fa fa-clipboard"></i>
                   <span> Cardings </a></span>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href=""> <i class="fa fa-image"></i>
+                  <a class="nav-link" href="./gallery.js"> <i class="fa fa-image"></i>
                   <span> Gallery </a></span>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href=""> <i class="fa fa-file"></i>
+                <a class="nav-link" href="./constitution.js"> <i class="fa fa-file"></i>
                 <span> Constitution </span></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href=""> <i class="fa fa-location-arrow"></i> 
+                <a class="nav-link" href="./directions.js"> <i class="fa fa-location-arrow"></i> 
                 <span> Directions </span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href=""> <i class="fa fa-phone"></i>
+                  <a class="nav-link" href="./contact.js"> <i class="fa fa-phone"></i>
                   <span> Contact Us </a></span>
                 </li>
               </ul>

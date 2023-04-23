@@ -149,7 +149,7 @@ main {
   display: flex;
   justify-content: center;
   font-size: 1.4rem;
-  background: linear-gradient(5deg, #298135 30%, #1b9c2d 40%, #298135 70%);
+  background: linear-gradient(45deg, #298135 30%, #1b9c2d 40%, #298135 70%);
   color: #fff;
   box-shadow: 0 0 15px #1a1a1a;
   z-index: 2;
@@ -163,12 +163,12 @@ main {
   left: 150px;
   margin: 10px 10px;
   color: #fff;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
   border-radius: 10px;
   font-weight: 600;
   background-color: #298135;
   padding: 10px ;
-  box-shadow: 0 0 15px #f1f1f1;
+  box-shadow: 0 0 5px #f1f1f1;
 }
 
 #login-container {
@@ -179,7 +179,7 @@ main {
 }
 
 .nav-link:hover {
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
   background-color: #53ac5f;
   color: #fff;
 }
